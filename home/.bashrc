@@ -116,9 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-## (2015-04-29,jkniiv) https://github.com/aconbere/vert (luarocks install vert)
-#source /usr/local/bin/vert_wrapper
-
 ## (2015-08-25,jkniiv) https://github.com/vodik/envoy
 export SSH_ASKPASS=/usr/lib/ssh/x11-ssh-askpass
 envoy
@@ -127,3 +124,4 @@ source <(envoy -p)
 ## (2015-09-01,jkniiv) https://github.com/andsens/homeshick
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+homeshick --quiet refresh
